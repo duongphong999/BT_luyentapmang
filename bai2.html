@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let nums = prompt("moi ban nhap so vao day");
+		let arr = nums.toString();
+		let result = [arr[0]]; 
+		for(let x = 1; x <arr.length ; x++){
+			if ((arr[x-1]%2==0 && arr[x]%2==0)) {
+				result.push('-',arr[x]); 
+			}else{
+				result.push(arr[x]);
+			}
+			
+			
+		}alert(result.join(''));
+
+	</script>
+</body>
+</html>
